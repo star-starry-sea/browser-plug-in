@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "useful tools",
+  "action": {
+    "default_icon": "img/logo.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "img/logo.png",
+    "48": "img/logo.png",
+    "16": "img/logo.png"
+  },
+  "content_scripts": [{
+      "matches": [
+        "http://blog.csdn.net/*/article/details/*",
+        "https://blog.csdn.net/*/article/details/*"
+      ],
+      "js": [
+        "js/csdn-article.js"
+      ]
+    },
+    {
+      "matches": [
+        "http://wenku.baidu.com/view/*",
+        "https://wenku.baidu.com/view/*"
+      ],
+      "js": [
+        "js/baidu-copy.js"
+      ]
+    }
+  ]
+}
