@@ -27,6 +27,9 @@ deleteLabel(document.querySelector("#recommendAdBox"));
 document.getElementById("article_content")?.removeAttribute("style");
 deleteLabel(document.getElementsByClassName('follow-text')[0]?.parentElement);
 deleteLabel(document.getElementsByClassName('hide-article-box')[0]);
+document.querySelectorAll("pre").forEach(e=>{
+    e.classList.remove("set-code-hide");
+})
 
 // 代码片段可复制
 document.querySelectorAll("code").forEach(c => {
