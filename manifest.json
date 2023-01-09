@@ -29,6 +29,15 @@
       "js": [
         "js/baidu-copy.js"
       ]
+    },
+    {
+      "matches": [
+        "http://www.tampermonkey.net/*",
+        "https://www.tampermonkey.net/*"
+      ],
+      "js": [
+        "js/tampermonkey-page.js"
+      ]
     }
   ]
 }

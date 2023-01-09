@@ -4,7 +4,9 @@
    * all-去除页面广告
 */
 
-// 清除页面广告
-document.querySelectorAll("ins").forEach(e => {
-    e.remove();
-})
+window.onload = function () {
+    // 清除页面广告
+    document.querySelectorAll("ins").forEach(e => {
+        e.remove();
+    })
+}

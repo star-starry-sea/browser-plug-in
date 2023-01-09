@@ -27,10 +27,10 @@ deleteLabel(document.querySelector("#recommendAdBox"));
 deleteLabel(document.querySelector("#asideNewNps"));
 
 // 显示完整文章
-document.getElementById("article_content")[0]?.removeAttribute("style");
+document.querySelector("#article_content")?.removeAttribute("style");
 deleteLabel(document.getElementsByClassName('follow-text')[0]?.parentElement);
 deleteLabel(document.getElementsByClassName('hide-article-box')[0]);
-document.querySelectorAll("pre").forEach(e=>{
+document.querySelectorAll("pre").forEach(e => {
     e.classList.remove("set-code-hide");
 })
 
