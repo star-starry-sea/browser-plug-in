@@ -1,6 +1,5 @@
 const listener_config = {attributes: true, childList: true, subtree: true};
 const observer = new MutationObserver(() => {
-    console.log("listen")
     document.querySelectorAll(".EC_result").forEach(e => {
         e.parentElement.parentElement.parentElement.remove();
     })
@@ -14,6 +13,5 @@ window.onload = function () {
 }
 
 window.onbeforeunload = function () {
-    console.log("unload");
     observer.disconnect();
 }
