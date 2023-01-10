@@ -23,6 +23,15 @@
     },
     {
       "matches": [
+        "http://www.baidu.com/s?*",
+        "https://www.baidu.com/s?*"
+      ],
+      "js": [
+        "js/baidu-search.js"
+      ]
+    },
+    {
+      "matches": [
         "http://wenku.baidu.com/view/*",
         "https://wenku.baidu.com/view/*"
       ],
