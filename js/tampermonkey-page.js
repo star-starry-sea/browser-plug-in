@@ -1,7 +1,7 @@
 /*
    @star
    * 用于tampermonkey相关页面
-   * all-去除页面广告
+   * 1. all-去除页面广告
 */
 
 window.onload = function () {
