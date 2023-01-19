@@ -15,7 +15,7 @@ const observer = new MutationObserver(() => {
 })
 
 window.onload = function () {
-    const listen_body = document.querySelector("body");
+    const listen_body = document.querySelector("#content_left");
     observer.observe(listen_body, listener_config);
 }
 
