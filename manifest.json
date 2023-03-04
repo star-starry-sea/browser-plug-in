@@ -23,8 +23,8 @@
     },
     {
       "matches": [
-        "http://www.baidu.com/s?*",
-        "https://www.baidu.com/s?*"
+        "http://www.baidu.com/*",
+        "https://www.baidu.com/*"
       ],
       "js": [
         "js/baidu-search.js"
