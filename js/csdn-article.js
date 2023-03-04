@@ -9,27 +9,20 @@
 */
 
 // 用于删除标签
-function deleteLabel(element) {
-    if (!element) {
-        return;
-    }
-    element.remove();
-}
-
 // 清除广告
-deleteLabel(document.querySelector(".toolbar-advert"));
-deleteLabel(document.querySelector(".mb8"));
-deleteLabel(document.querySelector("#footerRightAds"));
-deleteLabel(document.querySelector(".programmer1Box"));
-deleteLabel(document.querySelector("#recommendAdBox"));
+document.querySelector(".toolbar-advert")?.remove();
+document.querySelector(".mb8")?.remove();
+document.querySelector("#footerRightAds")?.remove();
+document.querySelector(".programmer1Box")?.remove();
+document.querySelector("#recommendAdBox")?.remove();
 
 // 去除推荐文章的选择框
-deleteLabel(document.querySelector("#asideNewNps"));
+document.querySelector("#asideNewNps")?.remove();
 
 // 显示完整文章
 document.querySelector("#article_content")?.removeAttribute("style");
-deleteLabel(document.getElementsByClassName('follow-text')[0]?.parentElement);
-deleteLabel(document.getElementsByClassName('hide-article-box')[0]);
+(document.getElementsByClassName('follow-text')[0]?.parentElement);
+document.getElementsByClassName('hide-article-box')[0]?.remove();
 document.querySelectorAll("pre").forEach(e => {
     e.classList.remove("set-code-hide");
 })
@@ -41,11 +34,11 @@ document.querySelectorAll("code").forEach(c => {
 
 // 删除代码片段右上角关注按钮
 document.querySelectorAll("pre>div").forEach(div => {
-    deleteLabel(div);
+    div?.remove();
 })
 
 document.querySelectorAll("pre>code>div").forEach(div => {
-    deleteLabel(div);
+    div?.remove();
 })
 
 // 复制时阻止事件传播 => 取消底部版权信息的加入
